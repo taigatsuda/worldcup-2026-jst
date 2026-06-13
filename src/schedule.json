@@ -1,0 +1,3608 @@
+[
+  {
+    "no": 1,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-12",
+    "monthDay": "6月12日",
+    "weekday": "金",
+    "time": "04:00",
+    "timestamp": "2026-06-12T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Mexico",
+        "ja": "メキシコ",
+        "flag": "🇲🇽"
+      },
+      "away": {
+        "raw": "South Africa",
+        "ja": "南アフリカ",
+        "flag": "🇿🇦"
+      }
+    },
+    "group": "GROUP A",
+    "broadcast": {
+      "tv": [
+        "NHK総合",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN",
+        "NHK ONE"
+      ]
+    },
+    "result": {
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "試合終了",
+      "kind": "finished"
+    },
+    "venue": "メキシコシティ・スタジアム（メキシコシティ）"
+  },
+  {
+    "no": 2,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-12",
+    "monthDay": "6月12日",
+    "weekday": "金",
+    "time": "11:00",
+    "timestamp": "2026-06-12T11:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "South Korea",
+        "ja": "韓国",
+        "flag": "🇰🇷"
+      },
+      "away": {
+        "raw": "Czechia",
+        "ja": "チェコ",
+        "flag": "🇨🇿"
+      }
+    },
+    "group": "GROUP A",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "試合終了",
+      "kind": "finished"
+    },
+    "venue": "エスタディオ・グアダラハラ（サポパン）"
+  },
+  {
+    "no": 3,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-13",
+    "monthDay": "6月13日",
+    "weekday": "土",
+    "time": "04:00",
+    "timestamp": "2026-06-13T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Canada",
+        "ja": "カナダ",
+        "flag": "🇨🇦"
+      },
+      "away": {
+        "raw": "Bosnia",
+        "ja": "ボスニア・ヘルツェゴビナ",
+        "flag": "🇧🇦"
+      }
+    },
+    "group": "GROUP B",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "トロント・スタジアム（トロント）"
+  },
+  {
+    "no": 4,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-13",
+    "monthDay": "6月13日",
+    "weekday": "土",
+    "time": "10:00",
+    "timestamp": "2026-06-13T10:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "USA",
+        "ja": "アメリカ",
+        "flag": "🇺🇸"
+      },
+      "away": {
+        "raw": "Paraguay",
+        "ja": "パラグアイ",
+        "flag": "🇵🇾"
+      }
+    },
+    "group": "GROUP D",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ロサンゼルス・スタジアム（ロサンゼルス）"
+  },
+  {
+    "no": 5,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-14",
+    "monthDay": "6月14日",
+    "weekday": "日",
+    "time": "04:00",
+    "timestamp": "2026-06-14T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Qatar",
+        "ja": "カタール",
+        "flag": "🇶🇦"
+      },
+      "away": {
+        "raw": "Switzerland",
+        "ja": "スイス",
+        "flag": "🇨🇭"
+      }
+    },
+    "group": "GROUP B",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "サンフランシスコ・ベイエリア・スタジアム"
+  },
+  {
+    "no": 6,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-14",
+    "monthDay": "6月14日",
+    "weekday": "日",
+    "time": "07:00",
+    "timestamp": "2026-06-14T07:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Brazil",
+        "ja": "ブラジル",
+        "flag": "🇧🇷"
+      },
+      "away": {
+        "raw": "Morocco",
+        "ja": "モロッコ",
+        "flag": "🇲🇦"
+      }
+    },
+    "group": "GROUP C",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ニューヨーク・ニュージャージー・スタジアム"
+  },
+  {
+    "no": 7,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-14",
+    "monthDay": "6月14日",
+    "weekday": "日",
+    "time": "10:00",
+    "timestamp": "2026-06-14T10:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Haiti",
+        "ja": "ハイチ",
+        "flag": "🇭🇹"
+      },
+      "away": {
+        "raw": "Scotland",
+        "ja": "スコットランド",
+        "flag": "🏴"
+      }
+    },
+    "group": "GROUP C",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ボストン・スタジアム"
+  },
+  {
+    "no": 8,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-14",
+    "monthDay": "6月14日",
+    "weekday": "日",
+    "time": "13:00",
+    "timestamp": "2026-06-14T13:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Australia",
+        "ja": "オーストラリア",
+        "flag": "🇦🇺"
+      },
+      "away": {
+        "raw": "Turkiye",
+        "ja": "トルコ",
+        "flag": "🇹🇷"
+      }
+    },
+    "group": "GROUP D",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "BCプレイス（バンクーバー）"
+  },
+  {
+    "no": 9,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-15",
+    "monthDay": "6月15日",
+    "weekday": "月",
+    "time": "02:00",
+    "timestamp": "2026-06-15T02:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Germany",
+        "ja": "ドイツ",
+        "flag": "🇩🇪"
+      },
+      "away": {
+        "raw": "Curacao",
+        "ja": "キュラソー",
+        "flag": "🇨🇼"
+      }
+    },
+    "group": "GROUP E",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ヒューストン・スタジアム"
+  },
+  {
+    "no": 10,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-15",
+    "monthDay": "6月15日",
+    "weekday": "月",
+    "time": "05:00",
+    "timestamp": "2026-06-15T05:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Netherlands",
+        "ja": "オランダ",
+        "flag": "🇳🇱"
+      },
+      "away": {
+        "raw": "Japan",
+        "ja": "日本",
+        "flag": "🇯🇵"
+      }
+    },
+    "group": "GROUP F",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ダラス・スタジアム"
+  },
+  {
+    "no": 11,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-15",
+    "monthDay": "6月15日",
+    "weekday": "月",
+    "time": "08:00",
+    "timestamp": "2026-06-15T08:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Ivory Coast",
+        "ja": "コートジボワール",
+        "flag": "🇨🇮"
+      },
+      "away": {
+        "raw": "Ecuador",
+        "ja": "エクアドル",
+        "flag": "🇪🇨"
+      }
+    },
+    "group": "GROUP E",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "フィラデルフィア・スタジアム"
+  },
+  {
+    "no": 12,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-15",
+    "monthDay": "6月15日",
+    "weekday": "月",
+    "time": "11:00",
+    "timestamp": "2026-06-15T11:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Sweden",
+        "ja": "スウェーデン",
+        "flag": "🇸🇪"
+      },
+      "away": {
+        "raw": "Tunisia",
+        "ja": "チュニジア",
+        "flag": "🇹🇳"
+      }
+    },
+    "group": "GROUP F",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "エスタディオ・モンテレイ（グアダルーペ）"
+  },
+  {
+    "no": 13,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-16",
+    "monthDay": "6月16日",
+    "weekday": "火",
+    "time": "01:00",
+    "timestamp": "2026-06-16T01:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Spain",
+        "ja": "スペイン",
+        "flag": "🇪🇸"
+      },
+      "away": {
+        "raw": "Cape Verde",
+        "ja": "カーボベルデ",
+        "flag": "🇨🇻"
+      }
+    },
+    "group": "GROUP H",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "アトランタ・スタジアム"
+  },
+  {
+    "no": 14,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-16",
+    "monthDay": "6月16日",
+    "weekday": "火",
+    "time": "04:00",
+    "timestamp": "2026-06-16T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Belgium",
+        "ja": "ベルギー",
+        "flag": "🇧🇪"
+      },
+      "away": {
+        "raw": "Egypt",
+        "ja": "エジプト",
+        "flag": "🇪🇬"
+      }
+    },
+    "group": "GROUP G",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "BCプレイス（バンクーバー）"
+  },
+  {
+    "no": 15,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-16",
+    "monthDay": "6月16日",
+    "weekday": "火",
+    "time": "07:00",
+    "timestamp": "2026-06-16T07:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Saudi Arabia",
+        "ja": "サウジアラビア",
+        "flag": "🇸🇦"
+      },
+      "away": {
+        "raw": "Uruguay",
+        "ja": "ウルグアイ",
+        "flag": "🇺🇾"
+      }
+    },
+    "group": "GROUP H",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "マイアミ・スタジアム"
+  },
+  {
+    "no": 16,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-16",
+    "monthDay": "6月16日",
+    "weekday": "火",
+    "time": "10:00",
+    "timestamp": "2026-06-16T10:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Iran",
+        "ja": "イラン",
+        "flag": "🇮🇷"
+      },
+      "away": {
+        "raw": "New Zealand",
+        "ja": "ニュージーランド",
+        "flag": "🇳🇿"
+      }
+    },
+    "group": "GROUP G",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ロサンゼルス・スタジアム（ロサンゼルス）"
+  },
+  {
+    "no": 17,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-17",
+    "monthDay": "6月17日",
+    "weekday": "水",
+    "time": "04:00",
+    "timestamp": "2026-06-17T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "France",
+        "ja": "フランス",
+        "flag": "🇫🇷"
+      },
+      "away": {
+        "raw": "Senegal",
+        "ja": "セネガル",
+        "flag": "🇸🇳"
+      }
+    },
+    "group": "GROUP I",
+    "broadcast": {
+      "tv": [
+        "フジテレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ニューヨーク・ニュージャージー・スタジアム"
+  },
+  {
+    "no": 18,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-17",
+    "monthDay": "6月17日",
+    "weekday": "水",
+    "time": "07:00",
+    "timestamp": "2026-06-17T07:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Iraq",
+        "ja": "イラク",
+        "flag": "🇮🇶"
+      },
+      "away": {
+        "raw": "Norway",
+        "ja": "ノルウェー",
+        "flag": "🇳🇴"
+      }
+    },
+    "group": "GROUP I",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ボストン・スタジアム"
+  },
+  {
+    "no": 19,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-17",
+    "monthDay": "6月17日",
+    "weekday": "水",
+    "time": "10:00",
+    "timestamp": "2026-06-17T10:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Argentina",
+        "ja": "アルゼンチン",
+        "flag": "🇦🇷"
+      },
+      "away": {
+        "raw": "Algeria",
+        "ja": "アルジェリア",
+        "flag": "🇩🇿"
+      }
+    },
+    "group": "GROUP J",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "カンザスシティ・スタジアム"
+  },
+  {
+    "no": 20,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-17",
+    "monthDay": "6月17日",
+    "weekday": "水",
+    "time": "13:00",
+    "timestamp": "2026-06-17T13:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Austria",
+        "ja": "オーストリア",
+        "flag": "🇦🇹"
+      },
+      "away": {
+        "raw": "Jordan",
+        "ja": "ヨルダン",
+        "flag": "🇯🇴"
+      }
+    },
+    "group": "GROUP J",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "サンフランシスコ・ベイエリア・スタジアム"
+  },
+  {
+    "no": 21,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-18",
+    "monthDay": "6月18日",
+    "weekday": "木",
+    "time": "02:00",
+    "timestamp": "2026-06-18T02:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Portugal",
+        "ja": "ポルトガル",
+        "flag": "🇵🇹"
+      },
+      "away": {
+        "raw": "DRC",
+        "ja": "コンゴ民主共和国",
+        "flag": "🇨🇩"
+      }
+    },
+    "group": "GROUP K",
+    "broadcast": {
+      "tv": [
+        "フジテレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ヒューストン・スタジアム"
+  },
+  {
+    "no": 22,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-18",
+    "monthDay": "6月18日",
+    "weekday": "木",
+    "time": "05:00",
+    "timestamp": "2026-06-18T05:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "England",
+        "ja": "イングランド",
+        "flag": "🏴"
+      },
+      "away": {
+        "raw": "Croatia",
+        "ja": "クロアチア",
+        "flag": "🇭🇷"
+      }
+    },
+    "group": "GROUP L",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ダラス・スタジアム"
+  },
+  {
+    "no": 23,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-18",
+    "monthDay": "6月18日",
+    "weekday": "木",
+    "time": "08:00",
+    "timestamp": "2026-06-18T08:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Ghana",
+        "ja": "ガーナ",
+        "flag": "🇬🇭"
+      },
+      "away": {
+        "raw": "Panama",
+        "ja": "パナマ",
+        "flag": "🇵🇦"
+      }
+    },
+    "group": "GROUP L",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "トロント・スタジアム（トロント）"
+  },
+  {
+    "no": 24,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-18",
+    "monthDay": "6月18日",
+    "weekday": "木",
+    "time": "11:00",
+    "timestamp": "2026-06-18T11:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Uzbekistan",
+        "ja": "ウズベキスタン",
+        "flag": "🇺🇿"
+      },
+      "away": {
+        "raw": "Colombia",
+        "ja": "コロンビア",
+        "flag": "🇨🇴"
+      }
+    },
+    "group": "GROUP K",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "メキシコシティ・スタジアム（メキシコシティ）"
+  },
+  {
+    "no": 25,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-19",
+    "monthDay": "6月19日",
+    "weekday": "金",
+    "time": "01:00",
+    "timestamp": "2026-06-19T01:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Czechia",
+        "ja": "チェコ",
+        "flag": "🇨🇿"
+      },
+      "away": {
+        "raw": "South Africa",
+        "ja": "南アフリカ",
+        "flag": "🇿🇦"
+      }
+    },
+    "group": "GROUP A",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "アトランタ・スタジアム"
+  },
+  {
+    "no": 26,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-19",
+    "monthDay": "6月19日",
+    "weekday": "金",
+    "time": "04:00",
+    "timestamp": "2026-06-19T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Switzerland",
+        "ja": "スイス",
+        "flag": "🇨🇭"
+      },
+      "away": {
+        "raw": "Bosnia",
+        "ja": "ボスニア・ヘルツェゴビナ",
+        "flag": "🇧🇦"
+      }
+    },
+    "group": "GROUP B",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ロサンゼルス・スタジアム（ロサンゼルス）"
+  },
+  {
+    "no": 27,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-19",
+    "monthDay": "6月19日",
+    "weekday": "金",
+    "time": "07:00",
+    "timestamp": "2026-06-19T07:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Canada",
+        "ja": "カナダ",
+        "flag": "🇨🇦"
+      },
+      "away": {
+        "raw": "Qatar",
+        "ja": "カタール",
+        "flag": "🇶🇦"
+      }
+    },
+    "group": "GROUP B",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "BCプレイス（バンクーバー）"
+  },
+  {
+    "no": 28,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-19",
+    "monthDay": "6月19日",
+    "weekday": "金",
+    "time": "10:00",
+    "timestamp": "2026-06-19T10:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Mexico",
+        "ja": "メキシコ",
+        "flag": "🇲🇽"
+      },
+      "away": {
+        "raw": "South Korea",
+        "ja": "韓国",
+        "flag": "🇰🇷"
+      }
+    },
+    "group": "GROUP A",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "エスタディオ・グアダラハラ（サポパン）"
+  },
+  {
+    "no": 29,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-20",
+    "monthDay": "6月20日",
+    "weekday": "土",
+    "time": "04:00",
+    "timestamp": "2026-06-20T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "USA",
+        "ja": "アメリカ",
+        "flag": "🇺🇸"
+      },
+      "away": {
+        "raw": "Australia",
+        "ja": "オーストラリア",
+        "flag": "🇦🇺"
+      }
+    },
+    "group": "GROUP D",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "シアトル・スタジアム"
+  },
+  {
+    "no": 30,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-20",
+    "monthDay": "6月20日",
+    "weekday": "土",
+    "time": "07:00",
+    "timestamp": "2026-06-20T07:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Scotland",
+        "ja": "スコットランド",
+        "flag": "🏴"
+      },
+      "away": {
+        "raw": "Morocco",
+        "ja": "モロッコ",
+        "flag": "🇲🇦"
+      }
+    },
+    "group": "GROUP C",
+    "broadcast": {
+      "tv": [
+        "フジテレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ボストン・スタジアム"
+  },
+  {
+    "no": 31,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-20",
+    "monthDay": "6月20日",
+    "weekday": "土",
+    "time": "09:30",
+    "timestamp": "2026-06-20T09:30:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Brazil",
+        "ja": "ブラジル",
+        "flag": "🇧🇷"
+      },
+      "away": {
+        "raw": "Haiti",
+        "ja": "ハイチ",
+        "flag": "🇭🇹"
+      }
+    },
+    "group": "GROUP C",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "フィラデルフィア・スタジアム"
+  },
+  {
+    "no": 32,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-20",
+    "monthDay": "6月20日",
+    "weekday": "土",
+    "time": "12:00",
+    "timestamp": "2026-06-20T12:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Turkiye",
+        "ja": "トルコ",
+        "flag": "🇹🇷"
+      },
+      "away": {
+        "raw": "Paraguay",
+        "ja": "パラグアイ",
+        "flag": "🇵🇾"
+      }
+    },
+    "group": "GROUP D",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "サンフランシスコ・ベイエリア・スタジアム"
+  },
+  {
+    "no": 33,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-21",
+    "monthDay": "6月21日",
+    "weekday": "日",
+    "time": "02:00",
+    "timestamp": "2026-06-21T02:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Netherlands",
+        "ja": "オランダ",
+        "flag": "🇳🇱"
+      },
+      "away": {
+        "raw": "Sweden",
+        "ja": "スウェーデン",
+        "flag": "🇸🇪"
+      }
+    },
+    "group": "GROUP F",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ヒューストン・スタジアム"
+  },
+  {
+    "no": 34,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-21",
+    "monthDay": "6月21日",
+    "weekday": "日",
+    "time": "05:00",
+    "timestamp": "2026-06-21T05:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Germany",
+        "ja": "ドイツ",
+        "flag": "🇩🇪"
+      },
+      "away": {
+        "raw": "Ivory Coast",
+        "ja": "コートジボワール",
+        "flag": "🇨🇮"
+      }
+    },
+    "group": "GROUP E",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "トロント・スタジアム（トロント）"
+  },
+  {
+    "no": 35,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-21",
+    "monthDay": "6月21日",
+    "weekday": "日",
+    "time": "12:00",
+    "timestamp": "2026-06-21T12:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Ecuador",
+        "ja": "エクアドル",
+        "flag": "🇪🇨"
+      },
+      "away": {
+        "raw": "Curacao",
+        "ja": "キュラソー",
+        "flag": "🇨🇼"
+      }
+    },
+    "group": "GROUP E",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "カンザスシティ・スタジアム"
+  },
+  {
+    "no": 36,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-21",
+    "monthDay": "6月21日",
+    "weekday": "日",
+    "time": "13:00",
+    "timestamp": "2026-06-21T13:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Tunisia",
+        "ja": "チュニジア",
+        "flag": "🇹🇳"
+      },
+      "away": {
+        "raw": "Japan",
+        "ja": "日本",
+        "flag": "🇯🇵"
+      }
+    },
+    "group": "GROUP F",
+    "broadcast": {
+      "tv": [
+        "NHK BS(生)",
+        "日本テレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "エスタディオ・モンテレイ（グアダルーペ）"
+  },
+  {
+    "no": 37,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-22",
+    "monthDay": "6月22日",
+    "weekday": "月",
+    "time": "01:00",
+    "timestamp": "2026-06-22T01:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Spain",
+        "ja": "スペイン",
+        "flag": "🇪🇸"
+      },
+      "away": {
+        "raw": "Saudi Arabia",
+        "ja": "サウジアラビア",
+        "flag": "🇸🇦"
+      }
+    },
+    "group": "GROUP H",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "アトランタ・スタジアム"
+  },
+  {
+    "no": 38,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-22",
+    "monthDay": "6月22日",
+    "weekday": "月",
+    "time": "04:00",
+    "timestamp": "2026-06-22T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Belgium",
+        "ja": "ベルギー",
+        "flag": "🇧🇪"
+      },
+      "away": {
+        "raw": "Iran",
+        "ja": "イラン",
+        "flag": "🇮🇷"
+      }
+    },
+    "group": "GROUP G",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ロサンゼルス・スタジアム（ロサンゼルス）"
+  },
+  {
+    "no": 39,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-22",
+    "monthDay": "6月22日",
+    "weekday": "月",
+    "time": "07:00",
+    "timestamp": "2026-06-22T07:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Uruguay",
+        "ja": "ウルグアイ",
+        "flag": "🇺🇾"
+      },
+      "away": {
+        "raw": "Cape Verde",
+        "ja": "カーボベルデ",
+        "flag": "🇨🇻"
+      }
+    },
+    "group": "GROUP H",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "マイアミ・スタジアム"
+  },
+  {
+    "no": 40,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-22",
+    "monthDay": "6月22日",
+    "weekday": "月",
+    "time": "10:00",
+    "timestamp": "2026-06-22T10:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "New Zealand",
+        "ja": "ニュージーランド",
+        "flag": "🇳🇿"
+      },
+      "away": {
+        "raw": "Egypt",
+        "ja": "エジプト",
+        "flag": "🇪🇬"
+      }
+    },
+    "group": "GROUP G",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "BCプレイス（バンクーバー）"
+  },
+  {
+    "no": 41,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-23",
+    "monthDay": "6月23日",
+    "weekday": "火",
+    "time": "02:00",
+    "timestamp": "2026-06-23T02:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Argentina",
+        "ja": "アルゼンチン",
+        "flag": "🇦🇷"
+      },
+      "away": {
+        "raw": "Austria",
+        "ja": "オーストリア",
+        "flag": "🇦🇹"
+      }
+    },
+    "group": "GROUP J",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ダラス・スタジアム"
+  },
+  {
+    "no": 42,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-23",
+    "monthDay": "6月23日",
+    "weekday": "火",
+    "time": "06:00",
+    "timestamp": "2026-06-23T06:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "France",
+        "ja": "フランス",
+        "flag": "🇫🇷"
+      },
+      "away": {
+        "raw": "Iraq",
+        "ja": "イラク",
+        "flag": "🇮🇶"
+      }
+    },
+    "group": "GROUP I",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "フィラデルフィア・スタジアム"
+  },
+  {
+    "no": 43,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-23",
+    "monthDay": "6月23日",
+    "weekday": "火",
+    "time": "09:00",
+    "timestamp": "2026-06-23T09:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Norway",
+        "ja": "ノルウェー",
+        "flag": "🇳🇴"
+      },
+      "away": {
+        "raw": "Senegal",
+        "ja": "セネガル",
+        "flag": "🇸🇳"
+      }
+    },
+    "group": "GROUP I",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ニューヨーク・ニュージャージー・スタジアム"
+  },
+  {
+    "no": 44,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-23",
+    "monthDay": "6月23日",
+    "weekday": "火",
+    "time": "12:00",
+    "timestamp": "2026-06-23T12:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Jordan",
+        "ja": "ヨルダン",
+        "flag": "🇯🇴"
+      },
+      "away": {
+        "raw": "Algeria",
+        "ja": "アルジェリア",
+        "flag": "🇩🇿"
+      }
+    },
+    "group": "GROUP J",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "サンフランシスコ・ベイエリア・スタジアム"
+  },
+  {
+    "no": 45,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-24",
+    "monthDay": "6月24日",
+    "weekday": "水",
+    "time": "02:00",
+    "timestamp": "2026-06-24T02:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Portugal",
+        "ja": "ポルトガル",
+        "flag": "🇵🇹"
+      },
+      "away": {
+        "raw": "Uzbekistan",
+        "ja": "ウズベキスタン",
+        "flag": "🇺🇿"
+      }
+    },
+    "group": "GROUP K",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ヒューストン・スタジアム"
+  },
+  {
+    "no": 46,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-24",
+    "monthDay": "6月24日",
+    "weekday": "水",
+    "time": "05:00",
+    "timestamp": "2026-06-24T05:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "England",
+        "ja": "イングランド",
+        "flag": "🏴"
+      },
+      "away": {
+        "raw": "Ghana",
+        "ja": "ガーナ",
+        "flag": "🇬🇭"
+      }
+    },
+    "group": "GROUP L",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ボストン・スタジアム"
+  },
+  {
+    "no": 47,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-24",
+    "monthDay": "6月24日",
+    "weekday": "水",
+    "time": "08:00",
+    "timestamp": "2026-06-24T08:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Panama",
+        "ja": "パナマ",
+        "flag": "🇵🇦"
+      },
+      "away": {
+        "raw": "Croatia",
+        "ja": "クロアチア",
+        "flag": "🇭🇷"
+      }
+    },
+    "group": "GROUP L",
+    "broadcast": {
+      "tv": [
+        "フジテレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "トロント・スタジアム（トロント）"
+  },
+  {
+    "no": 48,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-24",
+    "monthDay": "6月24日",
+    "weekday": "水",
+    "time": "11:00",
+    "timestamp": "2026-06-24T11:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Colombia",
+        "ja": "コロンビア",
+        "flag": "🇨🇴"
+      },
+      "away": {
+        "raw": "DRC",
+        "ja": "コンゴ民主共和国",
+        "flag": "🇨🇩"
+      }
+    },
+    "group": "GROUP K",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "エスタディオ・グアダラハラ（サポパン）"
+  },
+  {
+    "no": 49,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-25",
+    "monthDay": "6月25日",
+    "weekday": "木",
+    "time": "04:00",
+    "timestamp": "2026-06-25T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Switzerland",
+        "ja": "スイス",
+        "flag": "🇨🇭"
+      },
+      "away": {
+        "raw": "Canada",
+        "ja": "カナダ",
+        "flag": "🇨🇦"
+      }
+    },
+    "group": "GROUP B",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "BCプレイス（バンクーバー）"
+  },
+  {
+    "no": 50,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-25",
+    "monthDay": "6月25日",
+    "weekday": "木",
+    "time": "04:00",
+    "timestamp": "2026-06-25T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Bosnia",
+        "ja": "ボスニア・ヘルツェゴビナ",
+        "flag": "🇧🇦"
+      },
+      "away": {
+        "raw": "Qatar",
+        "ja": "カタール",
+        "flag": "🇶🇦"
+      }
+    },
+    "group": "GROUP B",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "シアトル・スタジアム"
+  },
+  {
+    "no": 51,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-25",
+    "monthDay": "6月25日",
+    "weekday": "木",
+    "time": "07:00",
+    "timestamp": "2026-06-25T07:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Scotland",
+        "ja": "スコットランド",
+        "flag": "🏴"
+      },
+      "away": {
+        "raw": "Brazil",
+        "ja": "ブラジル",
+        "flag": "🇧🇷"
+      }
+    },
+    "group": "GROUP C",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "マイアミ・スタジアム"
+  },
+  {
+    "no": 52,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-25",
+    "monthDay": "6月25日",
+    "weekday": "木",
+    "time": "07:00",
+    "timestamp": "2026-06-25T07:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Morocco",
+        "ja": "モロッコ",
+        "flag": "🇲🇦"
+      },
+      "away": {
+        "raw": "Haiti",
+        "ja": "ハイチ",
+        "flag": "🇭🇹"
+      }
+    },
+    "group": "GROUP C",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "アトランタ・スタジアム"
+  },
+  {
+    "no": 53,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-25",
+    "monthDay": "6月25日",
+    "weekday": "木",
+    "time": "10:00",
+    "timestamp": "2026-06-25T10:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Czechia",
+        "ja": "チェコ",
+        "flag": "🇨🇿"
+      },
+      "away": {
+        "raw": "Mexico",
+        "ja": "メキシコ",
+        "flag": "🇲🇽"
+      }
+    },
+    "group": "GROUP A",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "メキシコシティ・スタジアム（メキシコシティ）"
+  },
+  {
+    "no": 54,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-25",
+    "monthDay": "6月25日",
+    "weekday": "木",
+    "time": "10:00",
+    "timestamp": "2026-06-25T10:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "South Africa",
+        "ja": "南アフリカ",
+        "flag": "🇿🇦"
+      },
+      "away": {
+        "raw": "South Korea",
+        "ja": "韓国",
+        "flag": "🇰🇷"
+      }
+    },
+    "group": "GROUP A",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "エスタディオ・モンテレイ（グアダルーペ）"
+  },
+  {
+    "no": 55,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-26",
+    "monthDay": "6月26日",
+    "weekday": "金",
+    "time": "05:00",
+    "timestamp": "2026-06-26T05:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Ecuador",
+        "ja": "エクアドル",
+        "flag": "🇪🇨"
+      },
+      "away": {
+        "raw": "Germany",
+        "ja": "ドイツ",
+        "flag": "🇩🇪"
+      }
+    },
+    "group": "GROUP E",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ニューヨーク・ニュージャージー・スタジアム"
+  },
+  {
+    "no": 56,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-26",
+    "monthDay": "6月26日",
+    "weekday": "金",
+    "time": "05:00",
+    "timestamp": "2026-06-26T05:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Curacao",
+        "ja": "キュラソー",
+        "flag": "🇨🇼"
+      },
+      "away": {
+        "raw": "Ivory Coast",
+        "ja": "コートジボワール",
+        "flag": "🇨🇮"
+      }
+    },
+    "group": "GROUP E",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "フィラデルフィア・スタジアム"
+  },
+  {
+    "no": 57,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-26",
+    "monthDay": "6月26日",
+    "weekday": "金",
+    "time": "08:00",
+    "timestamp": "2026-06-26T08:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Japan",
+        "ja": "日本",
+        "flag": "🇯🇵"
+      },
+      "away": {
+        "raw": "Sweden",
+        "ja": "スウェーデン",
+        "flag": "🇸🇪"
+      }
+    },
+    "group": "GROUP F",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ダラス・スタジアム"
+  },
+  {
+    "no": 58,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-26",
+    "monthDay": "6月26日",
+    "weekday": "金",
+    "time": "08:00",
+    "timestamp": "2026-06-26T08:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Tunisia",
+        "ja": "チュニジア",
+        "flag": "🇹🇳"
+      },
+      "away": {
+        "raw": "Netherlands",
+        "ja": "オランダ",
+        "flag": "🇳🇱"
+      }
+    },
+    "group": "GROUP F",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "カンザスシティ・スタジアム"
+  },
+  {
+    "no": 59,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-26",
+    "monthDay": "6月26日",
+    "weekday": "金",
+    "time": "11:00",
+    "timestamp": "2026-06-26T11:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Turkiye",
+        "ja": "トルコ",
+        "flag": "🇹🇷"
+      },
+      "away": {
+        "raw": "USA",
+        "ja": "アメリカ",
+        "flag": "🇺🇸"
+      }
+    },
+    "group": "GROUP D",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ロサンゼルス・スタジアム（ロサンゼルス）"
+  },
+  {
+    "no": 60,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-26",
+    "monthDay": "6月26日",
+    "weekday": "金",
+    "time": "11:00",
+    "timestamp": "2026-06-26T11:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Paraguay",
+        "ja": "パラグアイ",
+        "flag": "🇵🇾"
+      },
+      "away": {
+        "raw": "Australia",
+        "ja": "オーストラリア",
+        "flag": "🇦🇺"
+      }
+    },
+    "group": "GROUP D",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "サンフランシスコ・ベイエリア・スタジアム"
+  },
+  {
+    "no": 61,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-27",
+    "monthDay": "6月27日",
+    "weekday": "土",
+    "time": "04:00",
+    "timestamp": "2026-06-27T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Norway",
+        "ja": "ノルウェー",
+        "flag": "🇳🇴"
+      },
+      "away": {
+        "raw": "France",
+        "ja": "フランス",
+        "flag": "🇫🇷"
+      }
+    },
+    "group": "GROUP I",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ボストン・スタジアム"
+  },
+  {
+    "no": 62,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-27",
+    "monthDay": "6月27日",
+    "weekday": "土",
+    "time": "04:00",
+    "timestamp": "2026-06-27T04:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Senegal",
+        "ja": "セネガル",
+        "flag": "🇸🇳"
+      },
+      "away": {
+        "raw": "Iraq",
+        "ja": "イラク",
+        "flag": "🇮🇶"
+      }
+    },
+    "group": "GROUP I",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "トロント・スタジアム（トロント）"
+  },
+  {
+    "no": 63,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-27",
+    "monthDay": "6月27日",
+    "weekday": "土",
+    "time": "09:00",
+    "timestamp": "2026-06-27T09:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Cape Verde",
+        "ja": "カーボベルデ",
+        "flag": "🇨🇻"
+      },
+      "away": {
+        "raw": "Saudi Arabia",
+        "ja": "サウジアラビア",
+        "flag": "🇸🇦"
+      }
+    },
+    "group": "GROUP H",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ヒューストン・スタジアム"
+  },
+  {
+    "no": 64,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-27",
+    "monthDay": "6月27日",
+    "weekday": "土",
+    "time": "09:00",
+    "timestamp": "2026-06-27T09:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Uruguay",
+        "ja": "ウルグアイ",
+        "flag": "🇺🇾"
+      },
+      "away": {
+        "raw": "Spain",
+        "ja": "スペイン",
+        "flag": "🇪🇸"
+      }
+    },
+    "group": "GROUP H",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "エスタディオ・グアダラハラ（サポパン）"
+  },
+  {
+    "no": 65,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-27",
+    "monthDay": "6月27日",
+    "weekday": "土",
+    "time": "12:00",
+    "timestamp": "2026-06-27T12:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Egypt",
+        "ja": "エジプト",
+        "flag": "🇪🇬"
+      },
+      "away": {
+        "raw": "Iran",
+        "ja": "イラン",
+        "flag": "🇮🇷"
+      }
+    },
+    "group": "GROUP G",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "シアトル・スタジアム"
+  },
+  {
+    "no": 66,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-27",
+    "monthDay": "6月27日",
+    "weekday": "土",
+    "time": "12:00",
+    "timestamp": "2026-06-27T12:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "New Zealand",
+        "ja": "ニュージーランド",
+        "flag": "🇳🇿"
+      },
+      "away": {
+        "raw": "Belgium",
+        "ja": "ベルギー",
+        "flag": "🇧🇪"
+      }
+    },
+    "group": "GROUP G",
+    "broadcast": {
+      "tv": [
+        "フジテレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "BCプレイス（バンクーバー）"
+  },
+  {
+    "no": 67,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-28",
+    "monthDay": "6月28日",
+    "weekday": "日",
+    "time": "06:00",
+    "timestamp": "2026-06-28T06:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Panama",
+        "ja": "パナマ",
+        "flag": "🇵🇦"
+      },
+      "away": {
+        "raw": "England",
+        "ja": "イングランド",
+        "flag": "🏴"
+      }
+    },
+    "group": "GROUP L",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ニューヨーク・ニュージャージー・スタジアム"
+  },
+  {
+    "no": 68,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-28",
+    "monthDay": "6月28日",
+    "weekday": "日",
+    "time": "06:00",
+    "timestamp": "2026-06-28T06:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Croatia",
+        "ja": "クロアチア",
+        "flag": "🇭🇷"
+      },
+      "away": {
+        "raw": "Ghana",
+        "ja": "ガーナ",
+        "flag": "🇬🇭"
+      }
+    },
+    "group": "GROUP L",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "フィラデルフィア・スタジアム"
+  },
+  {
+    "no": 69,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-28",
+    "monthDay": "6月28日",
+    "weekday": "日",
+    "time": "08:30",
+    "timestamp": "2026-06-28T08:30:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Colombia",
+        "ja": "コロンビア",
+        "flag": "🇨🇴"
+      },
+      "away": {
+        "raw": "Portugal",
+        "ja": "ポルトガル",
+        "flag": "🇵🇹"
+      }
+    },
+    "group": "GROUP K",
+    "broadcast": {
+      "tv": [
+        "フジテレビ",
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "マイアミ・スタジアム"
+  },
+  {
+    "no": 70,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-28",
+    "monthDay": "6月28日",
+    "weekday": "日",
+    "time": "08:30",
+    "timestamp": "2026-06-28T08:30:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "DRC",
+        "ja": "コンゴ民主共和国",
+        "flag": "🇨🇩"
+      },
+      "away": {
+        "raw": "Uzbekistan",
+        "ja": "ウズベキスタン",
+        "flag": "🇺🇿"
+      }
+    },
+    "group": "GROUP K",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "アトランタ・スタジアム"
+  },
+  {
+    "no": 71,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-28",
+    "monthDay": "6月28日",
+    "weekday": "日",
+    "time": "11:00",
+    "timestamp": "2026-06-28T11:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Algeria",
+        "ja": "アルジェリア",
+        "flag": "🇩🇿"
+      },
+      "away": {
+        "raw": "Austria",
+        "ja": "オーストリア",
+        "flag": "🇦🇹"
+      }
+    },
+    "group": "GROUP J",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K(録画)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "カンザスシティ・スタジアム"
+  },
+  {
+    "no": 72,
+    "stage": "Group stage",
+    "stageLabel": "GROUP STAGE",
+    "dateKey": "2026-06-28",
+    "monthDay": "6月28日",
+    "weekday": "日",
+    "time": "11:00",
+    "timestamp": "2026-06-28T11:00:00",
+    "matchup": {
+      "type": "teams",
+      "home": {
+        "raw": "Jordan",
+        "ja": "ヨルダン",
+        "flag": "🇯🇴"
+      },
+      "away": {
+        "raw": "Argentina",
+        "ja": "アルゼンチン",
+        "flag": "🇦🇷"
+      }
+    },
+    "group": "GROUP J",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K(生)"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ダラス・スタジアム"
+  },
+  {
+    "no": 73,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-06-29",
+    "monthDay": "6月29日",
+    "weekday": "月",
+    "time": "04:00",
+    "timestamp": "2026-06-29T04:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ロサンゼルス・スタジアム（ロサンゼルス）"
+  },
+  {
+    "no": 74,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-06-30",
+    "monthDay": "6月30日",
+    "weekday": "火",
+    "time": "04:00",
+    "timestamp": "2026-06-30T04:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ヒューストン・スタジアム"
+  },
+  {
+    "no": 75,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-06-30",
+    "monthDay": "6月30日",
+    "weekday": "火",
+    "time": "05:30",
+    "timestamp": "2026-06-30T05:30:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ボストン・スタジアム"
+  },
+  {
+    "no": 76,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-06-30",
+    "monthDay": "6月30日",
+    "weekday": "火",
+    "time": "10:00",
+    "timestamp": "2026-06-30T10:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "エスタディオ・モンテレイ（グアダルーペ）"
+  },
+  {
+    "no": 77,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-01",
+    "monthDay": "7月1日",
+    "weekday": "水",
+    "time": "02:00",
+    "timestamp": "2026-07-01T02:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ダラス・スタジアム"
+  },
+  {
+    "no": 78,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-01",
+    "monthDay": "7月1日",
+    "weekday": "水",
+    "time": "06:00",
+    "timestamp": "2026-07-01T06:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ニューヨーク・ニュージャージー・スタジアム"
+  },
+  {
+    "no": 79,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-01",
+    "monthDay": "7月1日",
+    "weekday": "水",
+    "time": "10:00",
+    "timestamp": "2026-07-01T10:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "メキシコシティ・スタジアム（メキシコシティ）"
+  },
+  {
+    "no": 80,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-02",
+    "monthDay": "7月2日",
+    "weekday": "木",
+    "time": "01:00",
+    "timestamp": "2026-07-02T01:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "アトランタ・スタジアム"
+  },
+  {
+    "no": 81,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-02",
+    "monthDay": "7月2日",
+    "weekday": "木",
+    "time": "05:00",
+    "timestamp": "2026-07-02T05:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "シアトル・スタジアム"
+  },
+  {
+    "no": 82,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-02",
+    "monthDay": "7月2日",
+    "weekday": "木",
+    "time": "05:00",
+    "timestamp": "2026-07-02T05:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "サンフランシスコ・ベイエリア・スタジアム"
+  },
+  {
+    "no": 83,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-03",
+    "monthDay": "7月3日",
+    "weekday": "金",
+    "time": "04:00",
+    "timestamp": "2026-07-03T04:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ロサンゼルス・スタジアム（ロサンゼルス）"
+  },
+  {
+    "no": 84,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-03",
+    "monthDay": "7月3日",
+    "weekday": "金",
+    "time": "08:00",
+    "timestamp": "2026-07-03T08:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "トロント・スタジアム（トロント）"
+  },
+  {
+    "no": 85,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-03",
+    "monthDay": "7月3日",
+    "weekday": "金",
+    "time": "12:00",
+    "timestamp": "2026-07-03T12:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "BCプレイス（バンクーバー）"
+  },
+  {
+    "no": 86,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-04",
+    "monthDay": "7月4日",
+    "weekday": "土",
+    "time": "03:00",
+    "timestamp": "2026-07-04T03:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ダラス・スタジアム"
+  },
+  {
+    "no": 87,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-04",
+    "monthDay": "7月4日",
+    "weekday": "土",
+    "time": "07:00",
+    "timestamp": "2026-07-04T07:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "マイアミ・スタジアム"
+  },
+  {
+    "no": 88,
+    "stage": "Round of 32",
+    "stageLabel": "ラウンド32",
+    "dateKey": "2026-07-04",
+    "monthDay": "7月4日",
+    "weekday": "土",
+    "time": "10:30",
+    "timestamp": "2026-07-04T10:30:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド32"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "カンザスシティ・スタジアム"
+  },
+  {
+    "no": 89,
+    "stage": "Round of 16",
+    "stageLabel": "ラウンド16",
+    "dateKey": "2026-07-05",
+    "monthDay": "7月5日",
+    "weekday": "日",
+    "time": "02:00",
+    "timestamp": "2026-07-05T02:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド16"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ヒューストン・スタジアム"
+  },
+  {
+    "no": 90,
+    "stage": "Round of 16",
+    "stageLabel": "ラウンド16",
+    "dateKey": "2026-07-05",
+    "monthDay": "7月5日",
+    "weekday": "日",
+    "time": "06:00",
+    "timestamp": "2026-07-05T06:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド16"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "フィラデルフィア・スタジアム"
+  },
+  {
+    "no": 91,
+    "stage": "Round of 16",
+    "stageLabel": "ラウンド16",
+    "dateKey": "2026-07-06",
+    "monthDay": "7月6日",
+    "weekday": "月",
+    "time": "05:00",
+    "timestamp": "2026-07-06T05:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド16"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ニューヨーク・ニュージャージー・スタジアム"
+  },
+  {
+    "no": 92,
+    "stage": "Round of 16",
+    "stageLabel": "ラウンド16",
+    "dateKey": "2026-07-06",
+    "monthDay": "7月6日",
+    "weekday": "月",
+    "time": "09:00",
+    "timestamp": "2026-07-06T09:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド16"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "メキシコシティ・スタジアム（メキシコシティ）"
+  },
+  {
+    "no": 93,
+    "stage": "Round of 16",
+    "stageLabel": "ラウンド16",
+    "dateKey": "2026-07-07",
+    "monthDay": "7月7日",
+    "weekday": "火",
+    "time": "04:00",
+    "timestamp": "2026-07-07T04:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド16"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "日本テレビ",
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ダラス・スタジアム"
+  },
+  {
+    "no": 94,
+    "stage": "Round of 16",
+    "stageLabel": "ラウンド16",
+    "dateKey": "2026-07-07",
+    "monthDay": "7月7日",
+    "weekday": "火",
+    "time": "09:00",
+    "timestamp": "2026-07-07T09:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド16"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "シアトル・スタジアム"
+  },
+  {
+    "no": 95,
+    "stage": "Round of 16",
+    "stageLabel": "ラウンド16",
+    "dateKey": "2026-07-08",
+    "monthDay": "7月8日",
+    "weekday": "水",
+    "time": "01:00",
+    "timestamp": "2026-07-08T01:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド16"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "アトランタ・スタジアム"
+  },
+  {
+    "no": 96,
+    "stage": "Round of 16",
+    "stageLabel": "ラウンド16",
+    "dateKey": "2026-07-08",
+    "monthDay": "7月8日",
+    "weekday": "水",
+    "time": "05:00",
+    "timestamp": "2026-07-08T05:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "ラウンド16"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "BCプレイス（バンクーバー）"
+  },
+  {
+    "no": 97,
+    "stage": "Quarterfinal",
+    "stageLabel": "準々決勝",
+    "dateKey": "2026-07-10",
+    "monthDay": "7月10日",
+    "weekday": "金",
+    "time": "05:00",
+    "timestamp": "2026-07-10T05:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "準々決勝"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ボストン・スタジアム"
+  },
+  {
+    "no": 98,
+    "stage": "Quarterfinal",
+    "stageLabel": "準々決勝",
+    "dateKey": "2026-07-11",
+    "monthDay": "7月11日",
+    "weekday": "土",
+    "time": "04:00",
+    "timestamp": "2026-07-11T04:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "準々決勝"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ロサンゼルス・スタジアム（ロサンゼルス）"
+  },
+  {
+    "no": 99,
+    "stage": "Quarterfinal",
+    "stageLabel": "準々決勝",
+    "dateKey": "2026-07-12",
+    "monthDay": "7月12日",
+    "weekday": "日",
+    "time": "05:00",
+    "timestamp": "2026-07-12T05:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "準々決勝"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "マイアミ・スタジアム"
+  },
+  {
+    "no": 100,
+    "stage": "Quarterfinal",
+    "stageLabel": "準々決勝",
+    "dateKey": "2026-07-12",
+    "monthDay": "7月12日",
+    "weekday": "日",
+    "time": "10:00",
+    "timestamp": "2026-07-12T10:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "準々決勝"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "カンザスシティ・スタジアム"
+  },
+  {
+    "no": 101,
+    "stage": "Semifinal",
+    "stageLabel": "準決勝",
+    "dateKey": "2026-07-15",
+    "monthDay": "7月15日",
+    "weekday": "水",
+    "time": "04:00",
+    "timestamp": "2026-07-15T04:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "準決勝"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ダラス・スタジアム"
+  },
+  {
+    "no": 102,
+    "stage": "Semifinal",
+    "stageLabel": "準決勝",
+    "dateKey": "2026-07-16",
+    "monthDay": "7月16日",
+    "weekday": "木",
+    "time": "04:00",
+    "timestamp": "2026-07-16T04:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "準決勝"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "アトランタ・スタジアム"
+  },
+  {
+    "no": 103,
+    "stage": "Third-place match",
+    "stageLabel": "3位決定戦",
+    "dateKey": "2026-07-19",
+    "monthDay": "7月19日",
+    "weekday": "日",
+    "time": "06:00",
+    "timestamp": "2026-07-19T06:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "3位決定戦"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "マイアミ・スタジアム"
+  },
+  {
+    "no": 104,
+    "stage": "Final",
+    "stageLabel": "決勝",
+    "dateKey": "2026-07-20",
+    "monthDay": "7月20日",
+    "weekday": "月",
+    "time": "04:00",
+    "timestamp": "2026-07-20T04:00:00",
+    "matchup": {
+      "type": "tbd",
+      "label": "決勝"
+    },
+    "group": "",
+    "broadcast": {
+      "tv": [
+        "NHK",
+        "NHK BSP4K"
+      ],
+      "online": [
+        "DAZN"
+      ]
+    },
+    "result": {
+      "status": "試合前",
+      "kind": "upcoming"
+    },
+    "venue": "ニューヨーク・ニュージャージー・スタジアム"
+  }
+]
