@@ -20,7 +20,8 @@ from pathlib import Path
 
 JST = timezone(timedelta(hours=9))
 SRC = Path(__file__).resolve().parent
-OUT = SRC.parent / "site"
+# 出力先はリポジトリ直下（branch方式の GitHub Pages がルートを配信する）
+OUT = SRC.parent
 API_BASE = "https://api.football-data.org/v4/competitions/WC"
 TOKEN = os.environ.get("WC_API_TOKEN", "")
 
