@@ -229,7 +229,7 @@ table.stand tr:last-child td{border-bottom:none}
 .d-head .w{font-family:var(--serif);font-weight:700;font-size:15px}
 .d-head .w.sat{color:var(--blue)}.d-head .w.sun{color:var(--red)}
 .d-head .cnt{font-size:11px;letter-spacing:.2em;color:var(--ink-soft);font-weight:700;margin-left:auto}
-.s-row{display:grid;grid-template-columns:62px minmax(0,1fr) 84px minmax(0,1fr) 130px minmax(0,210px);align-items:center;gap:10px;
+.s-row{display:grid;grid-template-columns:62px minmax(0,1fr) 84px minmax(0,1fr) 120px minmax(0,196px) 38px;align-items:center;gap:10px;
   padding:13px 14px;border-bottom:1px solid var(--paper-deep);background:var(--white);font-size:13.5px;transition:background .2s}
 .s-row:hover{background:var(--blue-soft)}
 .s-row.jp{background:linear-gradient(90deg,rgba(27,58,166,.07),rgba(215,0,15,.04));border-left:3px solid var(--red);padding-left:11px}
@@ -247,10 +247,31 @@ table.stand tr:last-child td{border-bottom:none}
 .s-row .ven{font-size:11px;color:var(--ink-soft);letter-spacing:.02em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .s-row .ven .tv{display:block;font-size:10px;color:var(--blue);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media(max-width:860px){
-  .s-row{grid-template-columns:50px minmax(0,1fr) 64px minmax(0,1fr);gap:7px;font-size:12.5px}
-  .s-row .tag,.s-row .ven{display:none}
+  .s-row{grid-template-columns:48px minmax(0,1fr) 58px minmax(0,1fr) 34px;gap:6px;font-size:12.5px}
+  .s-row>:nth-child(5),.s-row>:nth-child(6){display:none}
   .flag{width:34px;height:24px}.flag.sm{width:26px;height:18px}
 }
+
+/* ===== カレンダー連携 ===== */
+.cal-btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.08em;
+  border:1px solid var(--hair);background:var(--paper);color:var(--ink-soft);padding:6px 13px;border-radius:999px;cursor:pointer;transition:all .18s;line-height:1}
+.cal-btn:hover{border-color:var(--ink);color:var(--ink);background:#fff}
+.cal-btn svg{flex:none}
+.cal-btn.dark{background:rgba(246,243,236,.06);border-color:rgba(246,243,236,.3);color:rgba(246,243,236,.92)}
+.cal-btn.dark:hover{background:rgba(246,243,236,.14);border-color:rgba(246,243,236,.65);color:#fff}
+.jpn-card .cal-btn{margin-top:14px}
+.cal-bulk-bar{display:flex;flex-wrap:wrap;gap:10px;margin:-8px 0 clamp(20px,3vw,30px)}
+.s-row .cal-btn{padding:7px;border-radius:8px;justify-self:end}
+.s-row .cal-btn span{display:none}
+.cal-menu{position:absolute;z-index:600;background:#fff;border:1px solid var(--hair);border-radius:12px;
+  box-shadow:0 22px 60px -20px rgba(10,17,48,.45);padding:8px;min-width:216px}
+.cal-menu .cal-ttl{font-size:10px;font-weight:700;letter-spacing:.18em;color:var(--ink-soft);padding:7px 11px 9px}
+.cal-menu .cal-opt{display:flex;align-items:center;gap:10px;width:100%;text-align:left;font-family:var(--sans);font-size:13.5px;
+  color:var(--ink);background:none;border:none;border-radius:8px;padding:10px 11px;cursor:pointer}
+.cal-menu .cal-opt:hover{background:var(--blue-soft)}
+.cal-menu .cal-opt b{font-weight:700}
+.cal-menu .cal-opt small{color:var(--ink-soft);font-size:11px;margin-left:auto}
+.cal-menu .cal-opt svg{flex:none;color:var(--ink-soft)}
 
 /* ===== スマホ最適化 ===== */
 @media(max-width:600px){
@@ -322,7 +343,7 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
     <div>
       <div class="kicker">FIFA WORLD CUP 26™ — CANADA / MEXICO / UNITED STATES</div>
       <h1>日本、<br><span class="red">頂</span>へ。</h1>
-      <p class="hero-copy">全104試合を、<b>日本時間</b>で。広告のない、いちばん静かな速報サイト。<br>グループFを戦うSAMURAI BLUEの全日程・放送予定・世界の結果を、このページひとつで。</p>
+      <p class="hero-copy">全104試合を、<b>日本時間</b>で。広告のない、いちばん静かな速報サイト。<br>グループFを戦うSAMURAI BLUEの全日程・放送予定・世界の結果を、<br>このページひとつで。</p>
     </div>
     <div class="next-card" id="next-card">
       <span class="corner">NEXT MATCH — 日本代表</span>
@@ -344,6 +365,7 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
     <span class="sec-en">SAMURAI BLUE — GROUP F</span>
   </div>
   <div class="jpn-grid reveal" id="jpn-cards"></div>
+  <div class="cal-bulk-bar reveal"><button class="cal-btn" id="cal-jpn-all" type="button"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span>日本戦をまとめてカレンダー登録（.ics）</span></button></div>
   <div class="gf-band reveal">
     <div class="gf-ttl"><b>GROUP F</b><span>順位表 — 上位2か国+成績上位3位は決勝トーナメントへ</span></div>
     <div id="gf-table"></div>
@@ -376,6 +398,7 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
     <button class="fbtn jp" data-f="japan">日本戦のみ</button>
     <button class="fbtn" data-f="group">グループステージ</button>
     <button class="fbtn" data-f="ko">決勝トーナメント</button>
+    <button class="cal-btn" id="cal-filtered" type="button" style="margin-left:auto"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span>表示中の試合を.icsで保存</span></button>
   </div>
   <div id="sched"></div>
 </section>
@@ -415,24 +438,27 @@ const isLive = (m)=>m.st==='IN_PLAY'||m.st==='PAUSED';
 const todayKey = ()=>jst(new Date().toISOString()).key;
 const tomorrowKey = ()=>jst(new Date(Date.now()+864e5).toISOString()).key;
 
-// 放送局名 → 公式サイト（視聴ページ）
-function castUrl(name){
-  if(name.includes('NHK ONE')||name.includes('NHK ONE')) return 'https://plus.nhk.jp/';
-  if(name.includes('NHK')) return 'https://www.nhk.jp/p/sports/';
-  if(name.includes('日本テレビ')||name.includes('日テレ')) return 'https://www.ntv.co.jp/';
-  if(name.includes('DAZN')) return 'https://www.dazn.com/ja-JP/';
-  if(name.includes('U-NEXT')) return 'https://video.unext.jp/';
-  if(name.includes('ABEMA')) return 'https://abema.tv/';
+// 放送局名 + 試合 → できるだけ「その試合」に近い視聴/放送ページ
+// NHK・日テレは試合別の固定URLが公開されていないため、対戦カードで事前検索して該当ページに着地させる
+function castUrl(name, m){
+  const teams = (m && m.h && m.a) ? `${T(m.h).ja} ${T(m.a).ja}` : 'ワールドカップ2026';
+  const find = (kw)=>'https://search.yahoo.co.jp/search?p='+encodeURIComponent(`${teams} ワールドカップ ${kw} 放送`);
+  if(name.includes('NHK ONE')) return 'https://plus.nhk.jp/';        // NHKのライブ配信
+  if(name.includes('NHK')) return find('NHK');
+  if(name.includes('日本テレビ')||name.includes('日テレ')) return find('日本テレビ');
+  if(name.includes('DAZN')) return 'https://www.dazn.com/ja-JP/competition/fifa-world-cup'; // DAZNのW杯ページ
+  if(name.includes('U-NEXT')) return find('U-NEXT');
+  if(name.includes('ABEMA')) return find('ABEMA');
   return null;
 }
 function tvChips(m,dark){
   const cls = dark?'':'dk ';
   let h='';
   const make=(t,extra)=>{
-    const url=castUrl(t);
+    const url=castUrl(t,m);
     const c=`chip ${cls}${extra} link`;
     return url
-      ? `<a class="${c}" href="${url}" target="_blank" rel="noopener" aria-label="${t}の視聴ページを開く">${t}<span class="ext">↗</span></a>`
+      ? `<a class="${c}" href="${url}" target="_blank" rel="noopener" aria-label="${t}でこの試合を探す">${t}<span class="ext">↗</span></a>`
       : `<span class="chip ${cls}${extra}">${t}</span>`;
   };
   for(const t of (m.tv||[])) h+=make(t, t.includes('NHK')?'nhk':'');
@@ -463,6 +489,7 @@ function renderNext(){
     ${live
       ? `<div class="live-now">いま、試合中。 <span style="font-family:var(--disp);font-size:34px">${target.sh??0} – ${target.sa??0}</span></div>`
       : `<div class="countdown" id="cd"></div>`}
+    <div style="margin-top:18px">${calBtn(target.id,'この試合をカレンダーに','dark')}</div>
   `;
   if(cdTimer)clearInterval(cdTimer);
   if(!live){
@@ -525,6 +552,7 @@ function renderJapan(){
         ${res}
       </div>
       <div class="meta">${m.venue||''}<div class="tvs">${tvChips(m,false)}</div></div>
+      ${calBtn(m.id)}
     </article>`;
   }).join('');
 }
@@ -595,6 +623,7 @@ function renderSched(){
         <div class="side">${m.a?`${FLAG(m.a,'sm')}<span>${T(m.a).ja}</span>`:`<span class="tbd">対戦カード未定</span>`}</div>
         <div><span class="tag ${m.stage!=='GROUP_STAGE'?'ko':''}">${m.group?'GROUP '+m.group:m.stageJa}</span></div>
         <div class="ven">${m.venue||''}${tv?`<span class="tv">${tv}</span>`:''}</div>
+        ${calBtn(m.id,'','')}
       </div>`;
     }).join('');
     return `<div class="d-head"><span class="d">${d.m}月${d.d}日</span><span class="w ${WKCLS(d.wk)}">${d.wk}曜日</span><span class="cnt">${byDay[k].length} ${byDay[k].length>1?'MATCHES':'MATCH'}</span></div>${rows}`;
@@ -604,6 +633,93 @@ document.querySelectorAll('.fbtn').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('on'));
   b.classList.add('on'); filter=b.dataset.f; renderSched();
 }));
+
+/* ---- カレンダー連携（Google / Outlook / Apple(.ics) / Yahoo） ---- */
+const SITE_URL='https://taigatsuda.github.io/worldcup-2026-jst/';
+const CAL_ICON='<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>';
+function calBtn(id,label,cls){return `<button class="cal-btn ${cls||''}" data-cal-id="${id}" type="button">${CAL_ICON}<span>${label||'カレンダーに追加'}</span></button>`}
+const z2=(n)=>String(n).padStart(2,'0');
+function icsStamp(d){return d.getUTCFullYear()+z2(d.getUTCMonth()+1)+z2(d.getUTCDate())+'T'+z2(d.getUTCHours())+z2(d.getUTCMinutes())+'00Z'}
+function calStart(m){return new Date(m.utc)}
+function calEnd(m){return new Date(new Date(m.utc).getTime()+120*60000)} /* 2時間枠 */
+function calTitle(m){return (m.h&&m.a)?`⚽ ${T(m.h).ja} vs ${T(m.a).ja}｜W杯2026`:`⚽ ${m.stageJa}｜W杯2026`}
+function calBody(m){
+  const d=jst(m.utc); const bc=[...(m.tv||[]),...(m.ol||[])].join('・');
+  let s=`FIFAワールドカップ2026 ${m.group?'グループ'+m.group:m.stageJa}\n${d.m}月${d.d}日(${d.wk}) ${d.hm} キックオフ（日本時間）`;
+  if(m.venue)s+=`\n会場: ${m.venue}`;
+  if(bc)s+=`\n放送: ${bc}`;
+  return s+`\n\nITADAKI '26  ${SITE_URL}`;
+}
+function googleCalUrl(m){
+  const p=new URLSearchParams({action:'TEMPLATE',text:calTitle(m),dates:icsStamp(calStart(m))+'/'+icsStamp(calEnd(m)),details:calBody(m),location:m.venue||''});
+  return 'https://calendar.google.com/calendar/render?'+p.toString();
+}
+function outlookCalUrl(m){
+  const p=new URLSearchParams({path:'/calendar/action/compose',rru:'addevent',subject:calTitle(m),startdt:calStart(m).toISOString(),enddt:calEnd(m).toISOString(),body:calBody(m),location:m.venue||''});
+  return 'https://outlook.live.com/calendar/0/deeplink/compose?'+p.toString();
+}
+function yahooCalUrl(m){
+  const p=new URLSearchParams({v:'60',title:calTitle(m),st:icsStamp(calStart(m)),et:icsStamp(calEnd(m)),desc:calBody(m),in_loc:m.venue||''});
+  return 'https://calendar.yahoo.com/?'+p.toString();
+}
+const icsEsc=(s)=>String(s).replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n');
+function icsText(list){
+  const L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//ITADAKI26//WorldCup2026//JA','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:W杯2026 (日本時間)'];
+  for(const m of list){
+    L.push('BEGIN:VEVENT','UID:wc2026-'+m.id+'@itadaki','DTSTAMP:'+icsStamp(new Date()),
+      'DTSTART:'+icsStamp(calStart(m)),'DTEND:'+icsStamp(calEnd(m)),
+      'SUMMARY:'+icsEsc(calTitle(m)));
+    if(m.venue)L.push('LOCATION:'+icsEsc(m.venue));
+    L.push('DESCRIPTION:'+icsEsc(calBody(m)),'END:VEVENT');
+  }
+  L.push('END:VCALENDAR');
+  return L.join('\r\n');
+}
+function downloadIcs(list,name){
+  if(!list.length){alert('対象の試合がありません');return}
+  const blob=new Blob([icsText(list)],{type:'text/calendar;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a'); a.href=url; a.download=name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+let calMenu=null;
+function closeCalMenu(){if(calMenu){calMenu.remove();calMenu=null;document.removeEventListener('click',onDocCal);window.removeEventListener('resize',closeCalMenu)}}
+function onDocCal(e){if(calMenu&&!calMenu.contains(e.target))closeCalMenu()}
+const PIN='<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>';
+function openCalMenu(anchor,m){
+  closeCalMenu();
+  calMenu=document.createElement('div');
+  calMenu.className='cal-menu';
+  calMenu.innerHTML=`
+    <div class="cal-ttl">カレンダーに追加</div>
+    <a class="cal-opt" href="${googleCalUrl(m)}" target="_blank" rel="noopener">${PIN}<span><b>Google</b> カレンダー</span></a>
+    <a class="cal-opt" href="${outlookCalUrl(m)}" target="_blank" rel="noopener">${PIN}<span><b>Outlook</b></span></a>
+    <a class="cal-opt" href="${yahooCalUrl(m)}" target="_blank" rel="noopener">${PIN}<span><b>Yahoo!</b> カレンダー</span></a>
+    <button class="cal-opt" type="button" data-ics="1">${PIN}<span><b>iPhone</b> / その他</span><small>.ics</small></button>
+  `;
+  document.body.appendChild(calMenu);
+  const r=anchor.getBoundingClientRect();
+  const mw=calMenu.offsetWidth, vw=document.documentElement.clientWidth;
+  let left=window.scrollX+r.left; left=Math.min(left, window.scrollX+vw-mw-12); left=Math.max(left, window.scrollX+8);
+  calMenu.style.top=(window.scrollY+r.bottom+8)+'px';
+  calMenu.style.left=left+'px';
+  calMenu.querySelector('[data-ics]').addEventListener('click',()=>{downloadIcs([m],`wc2026_${m.id}.ics`);closeCalMenu()});
+  setTimeout(()=>{document.addEventListener('click',onDocCal);window.addEventListener('resize',closeCalMenu)},0);
+}
+document.addEventListener('click',(e)=>{
+  const b=e.target.closest('.cal-btn'); if(!b)return;
+  e.preventDefault(); e.stopPropagation();
+  const m=DATA.matches.find(x=>String(x.id)===b.dataset.calId); if(m)openCalMenu(b,m);
+});
+const jpnMatches=()=>DATA.matches.filter(isJPN).sort((x,y)=>new Date(x.utc)-new Date(y.utc));
+$('#cal-jpn-all')?.addEventListener('click',()=>downloadIcs(jpnMatches(),'samuraiblue_wc2026.ics'));
+$('#cal-filtered')?.addEventListener('click',()=>{
+  let ms=DATA.matches.slice().sort((x,y)=>new Date(x.utc)-new Date(y.utc));
+  if(filter==='japan')ms=ms.filter(isJPN);
+  if(filter==='group')ms=ms.filter(m=>m.stage==='GROUP_STAGE');
+  if(filter==='ko')ms=ms.filter(m=>m.stage!=='GROUP_STAGE');
+  downloadIcs(ms, filter==='all'?'wc2026_all.ics':`wc2026_${filter}.ics`);
+});
 
 /* ---- 時計 ---- */
 const CKF=new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
