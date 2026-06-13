@@ -131,6 +131,7 @@ def build():
             continue
         g = st['group'].replace('Group ', '')
         standings[g] = [{
+            'pos': t['position'],
             'tla': t['team']['tla'], 'p': t['playedGames'], 'w': t['won'], 'd': t['draw'],
             'l': t['lost'], 'gf': t['goalsFor'], 'ga': t['goalsAgainst'],
             'gd': t['goalDifference'], 'pts': t['points'],

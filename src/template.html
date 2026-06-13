@@ -561,7 +561,7 @@ function renderJapan(){
 function standTable(g,compact){
   const rows = (DATA.standings[g]||[]).map((r,i)=>`
     <tr class="${r.tla==='JPN'?'jpn':''}">
-      <td class="pos">${i+1}</td>
+      <td class="pos">${r.pos||(i+1)}</td>
       <td class="team"><span class="in">${FLAG(r.tla,compact?'':'sm')}${T(r.tla).ja}</span></td>
       <td>${r.p}</td><td>${r.w}</td><td>${r.d}</td><td>${r.l}</td>
       <td>${r.gd>0?'+':''}${r.gd}</td><td class="pts">${r.pts}</td>
@@ -744,7 +744,7 @@ async function refresh(){
       for(const st of (j.standings||[])){
         if(st.type!=='TOTAL')continue;
         DATA.standings[st.group.replace('Group ','')]=st.table.map(t=>({
-          tla:t.team.tla,p:t.playedGames,w:t.won,d:t.draw,l:t.lost,
+          pos:t.position,tla:t.team.tla,p:t.playedGames,w:t.won,d:t.draw,l:t.lost,
           gf:t.goalsFor,ga:t.goalsAgainst,gd:t.goalDifference,pts:t.points}));
       }
     }
