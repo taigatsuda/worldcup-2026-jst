@@ -377,8 +377,8 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
 
 <section id="today">
   <div class="sec-head reveal">
-    <div><span class="sec-no">02</span><h2>直近3日間の試合</h2></div>
-    <span class="sec-en">NEXT 3 DAYS — ALL TIMES JST</span>
+    <div><span class="sec-no">02</span><h2>今日と明日の試合</h2></div>
+    <span class="sec-en">TODAY &amp; TOMORROW — ALL TIMES JST</span>
   </div>
   <div class="today-wrap reveal" id="today-wrap"></div>
 </section>
@@ -597,7 +597,7 @@ function matchRowS(m){
 }
 function renderToday(){
   const labs=['今日','明日','明後日'];
-  const blocks=[0,1,2].map(n=>({lab:labs[n],key:jst(new Date(Date.now()+n*864e5).toISOString()).key}));
+  const blocks=[0,1].map(n=>({lab:labs[n],key:jst(new Date(Date.now()+n*864e5).toISOString()).key}));
   $('#today-wrap').innerHTML = blocks.map(({lab,key})=>{
     const ms=dayMatches(key);
     const d=jst(ms[0]?ms[0].utc:key+'T03:00:00Z'); /* 試合なし日は正午JST基準で曜日を出す */
