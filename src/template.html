@@ -517,6 +517,7 @@ function renderNext(){
 }
 
 /* ---- ティッカー ---- */
+const TICKER_SPEED = 85; /* ★速報ティッカーの流れる速さ（px/秒）。大きいほど速い */
 function renderTicker(){
   const fin = DATA.matches.filter(isFin).sort((x,y)=>new Date(y.utc)-new Date(x.utc)).slice(0,12);
   const lives = DATA.matches.filter(isLive);
@@ -531,7 +532,13 @@ function renderTicker(){
     const d=jst(DATA.matches[0].utc);
     items=`<span class="tk-item">大会開幕 — 全104試合を日本時間でお届けします</span>`;
   }
-  $('#ticker').innerHTML = items+items; /* ループ用に複製 */
+  const track=$('#ticker');
+  track.innerHTML = items+items; /* ループ用に複製 */
+  /* 件数に関わらず一定速度で流れるよう、内容の実幅から再生時間を逆算する */
+  requestAnimationFrame(()=>{
+    const oneCopy=track.scrollWidth/2;
+    if(oneCopy>0) track.style.animationDuration=Math.max(12,oneCopy/TICKER_SPEED)+'s';
+  });
 }
 
 /* ---- 01 日本戦カード ---- */
