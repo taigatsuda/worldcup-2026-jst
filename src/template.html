@@ -441,6 +441,9 @@ const isLive = (m)=>m.st==='IN_PLAY'||m.st==='PAUSED';
 const todayKey = ()=>jst(new Date().toISOString()).key;
 const tomorrowKey = ()=>jst(new Date(Date.now()+864e5).toISOString()).key;
 
+// ★DAZN視聴リンク：アフィリエイトリンクを入手したら、この1行を差し替えるだけでサイト全体に反映されます
+const DAZN_URL = 'https://www.dazn.com/ja-JP/competition/fifa-world-cup';
+
 // 放送局名 + 試合 → できるだけ「その試合」に近い視聴/放送ページ
 // NHK・日テレは試合別の固定URLが公開されていないため、対戦カードで事前検索して該当ページに着地させる
 function castUrl(name, m){
@@ -449,7 +452,7 @@ function castUrl(name, m){
   if(name.includes('NHK ONE')) return 'https://plus.nhk.jp/';        // NHKのライブ配信
   if(name.includes('NHK')) return find('NHK');
   if(name.includes('日本テレビ')||name.includes('日テレ')) return find('日本テレビ');
-  if(name.includes('DAZN')) return 'https://www.dazn.com/ja-JP/competition/fifa-world-cup'; // DAZNのW杯ページ
+  if(name.includes('DAZN')) return DAZN_URL;
   if(name.includes('U-NEXT')) return find('U-NEXT');
   if(name.includes('ABEMA')) return find('ABEMA');
   return null;
