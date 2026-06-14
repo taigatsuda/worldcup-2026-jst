@@ -1,0 +1,44 @@
+name: 最新スコア自動更新
+
+# 公開サイト(index.html)を最新の試合結果で再生成し、mainへコミットする。
+# - 15分ごと(試合結果の自動反映)
+# - 手動実行(Actions タブの Run workflow)
+# main直下をそのまま GitHub Pages が配信するため、コミット＝公開更新になる。
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: score-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 最新スコアを取得してサイトを生成
+        env:
+          WC_API_TOKEN: ${{ secrets.WC_API_TOKEN }}
+        run: python3 src/build.py
+
+      - name: 変更があればコミット
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "変更なし（スコア更新なし）"
+          else
+            git commit -m "auto: 最新スコア更新 [skip ci]"
+            git push
+          fi
