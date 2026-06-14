@@ -142,8 +142,12 @@ def build():
             'gd': t['goalDifference'], 'pts': t['points'],
         } for t in st['table']]
 
+    try:
+        names_ja = json.load(open(SRC / "player_names_ja.json", encoding="utf-8"))
+    except Exception:
+        names_ja = {}
     scorers = [{
-        'n': s['player']['name'],
+        'n': names_ja.get(s['player']['name'], s['player']['name']),
         'tla': (s.get('team') or {}).get('tla', ''),
         'g': s.get('goals') or 0,
         'dob': (s['player'].get('dateOfBirth') or '')[:10],
