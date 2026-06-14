@@ -265,8 +265,11 @@ table.stand tr:last-child td{border-bottom:none}
 .sc-rank{font-family:var(--disp);font-size:24px;line-height:1;color:var(--hair);width:26px;text-align:center;flex:none}
 .sc-rank.top{color:var(--red)}
 .sc-info{min-width:0}
-.sc-name{font-weight:700;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.sc-team{font-size:11px;color:var(--ink-soft);margin-top:3px;display:flex;align-items:center;gap:6px}
+.sc-name{font-weight:700;font-size:16px;letter-spacing:.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sc-sub{display:flex;align-items:center;gap:8px;margin-top:5px}
+.sc-age{font-family:var(--osw);font-size:11px;font-weight:500;color:var(--ink-soft);letter-spacing:.04em}
+.sc-tag{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--ink-soft);background:var(--paper-deep);padding:2px 8px 2px 5px;border-radius:999px}
+.sc-tag .flag{width:18px;height:13px}
 .sc-goals{margin-left:auto;font-family:var(--disp);font-size:26px;line-height:1;flex:none}
 .sc-goals small{font-family:var(--sans);font-size:10px;font-weight:700;color:var(--ink-soft);letter-spacing:.1em;margin-left:3px}
 .scorers-empty{font-size:13.5px;color:var(--ink-soft);padding:10px 2px;letter-spacing:.04em}
@@ -651,15 +654,17 @@ function renderScorers(){
   const el=$('#scorers-grid'); if(!el)return;
   const sc=(DATA.scorers||[]).filter(s=>s.g>0);
   if(!sc.length){el.innerHTML='<div class="scorers-empty">まだ得点ランキングのデータがありません（試合が進むと表示されます）。</div>';return}
-  el.innerHTML = sc.map((s,i)=>`
-    <div class="sc-row">
+  el.innerHTML = sc.map((s,i)=>{
+    const age=ageFrom(s.dob);
+    return `<div class="sc-row">
       <div class="sc-rank ${i<3?'top':''}">${i+1}</div>
       <div class="sc-info">
         <div class="sc-name">${s.n}</div>
-        <div class="sc-team team-link" data-team="${s.tla}">${FLAG(s.tla,'sm')}${T(s.tla).ja}</div>
+        <div class="sc-sub">${age?`<span class="sc-age">${age}歳</span>`:''}<span class="sc-tag team-link" data-team="${s.tla}">${FLAG(s.tla,'sm')}${T(s.tla).ja}</span></div>
       </div>
       <div class="sc-goals">${s.g}<small>点</small></div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
 /* ---- 選手名鑑モーダル（squads.jsonを初回クリック時に遅延読み込み） ---- */

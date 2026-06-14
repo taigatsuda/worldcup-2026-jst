@@ -146,6 +146,7 @@ def build():
         'n': s['player']['name'],
         'tla': (s.get('team') or {}).get('tla', ''),
         'g': s.get('goals') or 0,
+        'dob': (s['player'].get('dateOfBirth') or '')[:10],
     } for s in api_scorers]
 
     teams_obj = {tla: {'ja': ja, 'flag': fl} for tla, (ja, fl) in TEAMS.items()}
