@@ -487,6 +487,11 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
 <script>
 const DATA = __WC_DATA__;
 
+// ★ライブスコア中継(Cloudflare Worker)のURL。空ならローカルサーバーの /api を使う。
+//   公開サイトでリアルタイム更新したい場合、デプロイした Worker のURLをここに入れる。
+//   例: 'https://wc-proxy.xxxx.workers.dev'
+const API_BASE = '';
+
 const $ = (s)=>document.querySelector(s);
 const T = (tla)=>DATA.teams[tla]||{ja:tla,flag:''};
 const FLAG = (tla,cls='')=>{const t=T(tla);return t.flag?`<img class="flag ${cls}" src="https://flagcdn.com/w80/${t.flag}.png" alt="${t.ja}">`:''};
@@ -870,7 +875,7 @@ setInterval(()=>{$('#clock').textContent=CKF.format(new Date())},1000);
 function renderAll(){renderNext();renderTicker();renderJapan();renderGroups();renderScorers();renderToday();renderSched()}
 async function refresh(){
   try{
-    const [mr,sr]=await Promise.all([fetch('/api/matches'),fetch('/api/standings')]);
+    const [mr,sr]=await Promise.all([fetch(API_BASE+'/api/matches'),fetch(API_BASE+'/api/standings')]);
     if(mr.ok){
       const j=await mr.json();
       const byId={}; for(const m of DATA.matches) byId[m.id]=m;
