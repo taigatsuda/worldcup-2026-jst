@@ -191,6 +191,9 @@ table.stand tr:last-child td{border-bottom:none}
 .today-wrap{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:clamp(14px,1.8vw,22px)}
 .day-block h3{font-family:var(--disp);font-size:clamp(24px,2.4vw,32px);letter-spacing:.08em;font-weight:400;margin-bottom:14px;display:flex;align-items:baseline;gap:12px}
 .day-block h3 small{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--ink-soft)}
+.day-block h3 .tdlab{font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--red)}
+.day-block h3 .tdwk{font-family:var(--serif);font-size:15px;font-weight:700;color:var(--ink-soft)}
+.day-block h3 .tdwk.sat{color:var(--blue)}.day-block h3 .tdwk.sun{color:var(--red)}
 .tmatch{background:var(--white);border:1px solid var(--hair);padding:16px 18px;display:grid;grid-template-columns:54px 1fr auto 1fr;align-items:center;gap:12px;margin-bottom:10px}
 .tmatch.jp{border-left:3px solid var(--red);background:linear-gradient(90deg,rgba(27,58,166,.06),transparent 60%),var(--white)}
 .tmatch .tt{font-family:var(--osw);font-weight:500;font-size:15px;letter-spacing:.06em}
@@ -374,8 +377,8 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
 
 <section id="today">
   <div class="sec-head reveal">
-    <div><span class="sec-no">02</span><h2>今日と明日の試合</h2></div>
-    <span class="sec-en">TODAY &amp; TOMORROW — ALL TIMES JST</span>
+    <div><span class="sec-no">02</span><h2>直近3日間の試合</h2></div>
+    <span class="sec-en">NEXT 3 DAYS — ALL TIMES JST</span>
   </div>
   <div class="today-wrap reveal" id="today-wrap"></div>
 </section>
@@ -408,7 +411,7 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
 <footer>
   <div class="f-in">
     <div>
-      <div class="big">眠い朝も、<span class="red">蹴る</span>理由になる。</div>
+      <div class="big">この夏、日本の朝は<span class="red">サッカー</span>で始まる。</div>
       <div class="updated-pill"><span class="dot" id="upd-dot"></span><span id="upd-label">最終更新</span>&nbsp;<span id="updated">--:--</span>&nbsp;JST</div>
     </div>
     <div class="f-meta">
@@ -590,11 +593,12 @@ function matchRowS(m){
   </div>`;
 }
 function renderToday(){
-  const blocks=[['TODAY',todayKey()],['TOMORROW',tomorrowKey()]];
-  $('#today-wrap').innerHTML = blocks.map(([lab,key])=>{
+  const labs=['今日','明日','明後日'];
+  const blocks=[0,1,2].map(n=>({lab:labs[n],key:jst(new Date(Date.now()+n*864e5).toISOString()).key}));
+  $('#today-wrap').innerHTML = blocks.map(({lab,key})=>{
     const ms=dayMatches(key);
-    const d=key.split('-');
-    return `<div class="day-block"><h3>${lab} ${+d[1]}.${+d[2]}<small>${ms.length?ms.length+' 試合':''}</small></h3>
+    const d=jst(ms[0]?ms[0].utc:key+'T03:00:00Z'); /* 試合なし日は正午JST基準で曜日を出す */
+    return `<div class="day-block"><h3><span class="tdlab">${lab}</span>${d.m}.${d.d}<span class="tdwk ${WKCLS(d.wk)}">${d.wk}</span><small>${ms.length?ms.length+' 試合':'試合なし'}</small></h3>
       ${ms.length?ms.map(matchRowS).join(''):'<div class="none-msg">この日の試合はありません。</div>'}</div>`;
   }).join('');
 }
