@@ -63,6 +63,11 @@ ALIAS = {'Turkiye': 'TUR', 'USA': 'USA', 'DRC': 'COD', 'Korea Republic': 'KOR',
 def build():
     api_matches = fetch("/matches")["matches"]
     api_standings = fetch("/standings")["standings"]
+    try:
+        api_scorers = fetch("/scorers")["scorers"]
+    except Exception as e:
+        print("得点ランキング取得失敗:", e)
+        api_scorers = []
     sched = json.load(open(SRC / "schedule.json", encoding="utf-8"))
 
     api_name_to_tla = {}
@@ -137,10 +142,16 @@ def build():
             'gd': t['goalDifference'], 'pts': t['points'],
         } for t in st['table']]
 
+    scorers = [{
+        'n': s['player']['name'],
+        'tla': (s.get('team') or {}).get('tla', ''),
+        'g': s.get('goals') or 0,
+    } for s in api_scorers]
+
     teams_obj = {tla: {'ja': ja, 'flag': fl} for tla, (ja, fl) in TEAMS.items()}
     data = {
         'generatedAt': datetime.now(JST).strftime('%Y-%m-%d %H:%M'),
-        'teams': teams_obj, 'matches': matches, 'standings': standings,
+        'teams': teams_obj, 'matches': matches, 'standings': standings, 'scorers': scorers,
     }
     blob = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
 
