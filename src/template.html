@@ -288,18 +288,25 @@ table.stand tr:last-child td{border-bottom:none}
 .squad-hint b{color:var(--blue)}
 .team-link{cursor:pointer}
 .team-link:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--blue)}
-.scorers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:10px}
-.sc-row{display:flex;align-items:center;gap:13px;background:var(--white);border:1px solid var(--hair);border-radius:10px;padding:12px 16px}
-.sc-rank{font-family:var(--disp);font-size:24px;line-height:1;color:var(--hair);width:26px;text-align:center;flex:none}
-.sc-rank.top{color:var(--red)}
-.sc-info{min-width:0}
-.sc-name{font-weight:700;font-size:16px;letter-spacing:.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.sc-sub{display:flex;align-items:center;gap:8px;margin-top:5px}
-.sc-age{font-family:var(--osw);font-size:11px;font-weight:500;color:var(--ink-soft);letter-spacing:.04em}
-.sc-tag{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--ink-soft);background:var(--paper-deep);padding:2px 8px 2px 5px;border-radius:999px}
+.scorers-grid{display:flex;flex-direction:column;gap:2px}
+.sc-row{display:flex;align-items:center;gap:15px;padding:13px 8px;border-bottom:1px solid var(--paper-deep)}
+.sc-row:first-child{padding-top:4px}
+.sc-rank{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-size:19px;background:var(--paper-deep);color:var(--ink-soft);flex:none}
+.sc-rank.m-gold{background:#dcb64a;color:#3a2c00}
+.sc-rank.m-silver{background:#c4c8ce;color:#2a2e33}
+.sc-rank.m-bronze{background:#cd9162;color:#3a1d08}
+.sc-body{flex:1;min-width:0}
+.sc-line{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.sc-name{font-weight:700;font-size:15.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.sc-tag{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--ink-soft);background:var(--paper-deep);padding:2px 8px 2px 5px;border-radius:999px;flex:none}
 .sc-tag .flag{width:18px;height:13px}
-.sc-goals{margin-left:auto;font-family:var(--disp);font-size:26px;line-height:1;flex:none}
-.sc-goals small{font-family:var(--sans);font-size:10px;font-weight:700;color:var(--ink-soft);letter-spacing:.1em;margin-left:3px}
+.sc-age{font-family:var(--osw);font-size:11px;font-weight:500;color:var(--ink-soft);flex:none}
+.sc-barwrap{display:flex;align-items:center;gap:13px}
+.sc-bar{flex:1;height:13px;background:var(--paper-deep);border-radius:7px;overflow:hidden}
+.sc-bar-fill{height:100%;background:var(--red);border-radius:7px;transition:width .7s cubic-bezier(.2,.7,.2,1)}
+.sc-bar-fill.m-gold{background:#d7a829}
+.sc-goals{font-family:var(--disp);font-size:28px;line-height:1;flex:none;min-width:46px;text-align:right}
+.sc-goals small{font-family:var(--sans);font-size:10px;font-weight:700;color:var(--ink-soft);letter-spacing:.08em;margin-left:2px}
 .scorers-empty{font-size:13.5px;color:var(--ink-soft);padding:10px 2px;letter-spacing:.04em}
 
 .squad-modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:flex-end;justify-content:center}
@@ -722,15 +729,24 @@ function renderScorers(){
   const el=$('#scorers-grid'); if(!el)return;
   const sc=(DATA.scorers||[]).filter(s=>s.g>0);
   if(!sc.length){el.innerHTML='<div class="scorers-empty">まだ得点ランキングのデータがありません（試合が進むと表示されます）。</div>';return}
+  const max=Math.max(...sc.map(s=>s.g));
+  const medal=['m-gold','m-silver','m-bronze'];
   el.innerHTML = sc.map((s,i)=>{
     const age=ageFrom(s.dob);
+    const pct=Math.max(6,Math.round(s.g/max*100));
     return `<div class="sc-row">
-      <div class="sc-rank ${i<3?'top':''}">${i+1}</div>
-      <div class="sc-info">
-        <div class="sc-name">${s.n}</div>
-        <div class="sc-sub">${age?`<span class="sc-age">${age}歳</span>`:''}<span class="sc-tag team-link" data-team="${s.tla}">${FLAG(s.tla,'sm')}${T(s.tla).ja}</span></div>
+      <div class="sc-rank ${i<3?medal[i]:''}">${i+1}</div>
+      <div class="sc-body">
+        <div class="sc-line">
+          <span class="sc-name">${s.n}</span>
+          <span class="sc-tag team-link" data-team="${s.tla}">${FLAG(s.tla,'sm')}${T(s.tla).ja}</span>
+          ${age?`<span class="sc-age">${age}歳</span>`:''}
+        </div>
+        <div class="sc-barwrap">
+          <div class="sc-bar"><div class="sc-bar-fill ${i===0?'m-gold':''}" style="width:${pct}%"></div></div>
+          <span class="sc-goals">${s.g}<small>点</small></span>
+        </div>
       </div>
-      <div class="sc-goals">${s.g}<small>点</small></div>
     </div>`;
   }).join('');
 }
