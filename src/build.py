@@ -125,6 +125,7 @@ def build():
             'stage': stage, 'stageJa': STAGE_JA.get(stage, stage),
             'group': (x.get('group') or '').replace('GROUP_', ''),
             'h': h, 'a': a, 'sh': ft['home'], 'sa': ft['away'],
+            'w': x['score'].get('winner'),
             'venue': (s or {}).get('venue', ''),
             'tv': ((s or {}).get('broadcast') or {}).get('tv', []),
             'ol': ((s or {}).get('broadcast') or {}).get('online', []),

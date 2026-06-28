@@ -255,6 +255,34 @@ table.stand tr:last-child td{border-bottom:none}
   .flag{width:34px;height:24px}.flag.sm{width:26px;height:18px}
 }
 
+/* ===== 決勝トーナメント表（ブラケット） ===== */
+.bracket-hint{margin:0 0 18px;font-size:12.5px;color:var(--ink-soft);letter-spacing:.03em}
+.bracket-hint b{color:var(--ink)}
+.bk-jp-key{color:var(--red);margin:0 2px 0 6px}
+.bracket-scroll-note{color:var(--blue);margin-left:8px;font-weight:700;font-size:11.5px}
+.bracket-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:4px 2px 14px}
+.bracket{display:flex;gap:clamp(14px,2vw,30px);min-width:min-content;align-items:stretch}
+.bk-col{display:flex;flex-direction:column;min-width:178px;flex:none}
+.bk-col>h4{font-family:var(--osw);font-weight:600;font-size:12px;letter-spacing:.16em;color:var(--blue);
+  border-bottom:1px solid var(--ink);padding-bottom:7px;margin-bottom:6px;display:flex;align-items:baseline;justify-content:space-between}
+.bk-col>h4 small{font-family:var(--sans);font-size:10px;font-weight:700;color:var(--ink-soft);letter-spacing:.06em}
+.bk-col-inner{display:flex;flex-direction:column;justify-content:space-around;flex:1;gap:8px}
+.bk-match{background:var(--white);border:1px solid var(--hair);border-radius:9px;padding:8px 11px;position:relative}
+.bk-match.jp{border-color:var(--indigo);border-left:3px solid var(--red);box-shadow:0 6px 18px -12px rgba(10,17,48,.4)}
+.bk-match.live{border-color:var(--red)}
+.bk-live{position:absolute;top:-8px;right:8px;background:var(--red);color:#fff;font-size:8.5px;font-weight:700;letter-spacing:.14em;padding:2px 7px;border-radius:999px;animation:blink 1.4s infinite}
+.bk-team{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12.5px;font-weight:500}
+.bk-team+.bk-team{border-top:1px solid var(--paper-deep)}
+.bk-team .bk-nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bk-team.win{font-weight:800}
+.bk-team.lose{opacity:.4}
+.bk-team.jpteam .bk-nm{color:var(--blue)}
+.bk-team .bk-score{margin-left:auto;font-family:var(--osw);font-weight:600;font-size:14px;flex:none}
+.bk-team.tbd{color:var(--ink-soft);font-weight:500}
+.bk-team.tbd .bk-dot{width:18px;height:13px;border-radius:2px;background:var(--paper-deep);flex:none}
+.bk-col-3rd{justify-content:flex-end}
+.bk-col-3rd>h4{color:#8a6d1a;border-bottom-color:#8a6d1a}
+
 /* ===== 選手名鑑・得点ランキング ===== */
 .squad-hint{margin-top:18px;font-size:12.5px;color:var(--ink-soft);letter-spacing:.04em}
 .squad-hint b{color:var(--blue)}
@@ -380,7 +408,7 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
 <header>
   <div class="brand"><span class="sun"></span><span class="wm">ITADAKI ’26<small>日本時間で観るワールドカップ</small></span></div>
   <nav>
-    <a href="#japan">日本代表</a><a href="#today">今日の試合</a><a href="#groups">グループ</a><a href="#schedule">全日程</a>
+    <a href="#japan">日本代表</a><a href="#knockout">決勝T</a><a href="#today">今日の試合</a><a href="#groups">グループ</a><a href="#schedule">全日程</a>
   </nav>
   <div class="clock"><b>JST</b><span id="clock">--:--:--</span></div>
 </header>
@@ -420,9 +448,18 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
   </div>
 </section>
 
+<section id="knockout">
+  <div class="sec-head reveal">
+    <div><span class="sec-no">02</span><h2>決勝トーナメント表</h2></div>
+    <span class="sec-en">KNOCKOUT BRACKET — 勝ち上がり</span>
+  </div>
+  <p class="bracket-hint reveal">各ラウンドの対戦と結果。<b>勝者</b>は濃く表示されます。<span class="bk-jp-key">■</span> は日本の経路。<span class="bracket-scroll-note">→ 横スクロールできます</span></p>
+  <div class="bracket-scroll reveal"><div class="bracket" id="bracket"></div></div>
+</section>
+
 <section id="today">
   <div class="sec-head reveal">
-    <div><span class="sec-no">02</span><h2>今日と明日の試合</h2></div>
+    <div><span class="sec-no">03</span><h2>今日と明日の試合</h2></div>
     <span class="sec-en">TODAY &amp; TOMORROW — ALL TIMES JST</span>
   </div>
   <div class="today-wrap reveal" id="today-wrap"></div>
@@ -430,7 +467,7 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
 
 <section id="groups">
   <div class="sec-head reveal">
-    <div><span class="sec-no">03</span><h2>グループステージ</h2></div>
+    <div><span class="sec-no">04</span><h2>グループステージ</h2></div>
     <span class="sec-en">12 GROUPS / 48 NATIONS</span>
   </div>
   <div class="groups-grid reveal" id="groups-grid"></div>
@@ -439,7 +476,7 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
 
 <section id="players">
   <div class="sec-head reveal">
-    <div><span class="sec-no">04</span><h2>得点ランキング</h2></div>
+    <div><span class="sec-no">05</span><h2>得点ランキング</h2></div>
     <span class="sec-en">TOP SCORERS — 注目のゴールゲッター</span>
   </div>
   <div class="scorers-grid reveal" id="scorers-grid"></div>
@@ -447,7 +484,7 @@ footer{margin-top:clamp(70px,10vw,130px);background:var(--indigo);color:rgba(246
 
 <section id="schedule">
   <div class="sec-head reveal">
-    <div><span class="sec-no">05</span><h2>全日程<span style="font-size:.45em;font-family:var(--osw);letter-spacing:.2em;margin-left:18px;color:var(--ink-soft)">104 MATCHES</span></h2></div>
+    <div><span class="sec-no">06</span><h2>全日程<span style="font-size:.45em;font-family:var(--osw);letter-spacing:.2em;margin-left:18px;color:var(--ink-soft)">104 MATCHES</span></h2></div>
     <span class="sec-en">FULL SCHEDULE — JAPAN STANDARD TIME</span>
   </div>
   <div class="filters reveal">
@@ -655,6 +692,32 @@ function renderGroups(){
 }
 
 /* ---- 得点ランキング ---- */
+/* ---- 決勝トーナメント表 ---- */
+const KO_STAGES=[['LAST_32','ラウンド32'],['LAST_16','ラウンド16'],['QUARTER_FINALS','準々決勝'],['SEMI_FINALS','準決勝'],['FINAL','決勝']];
+function bkTeam(tla,score,won,lost){
+  if(!tla)return `<div class="bk-team tbd"><span class="bk-dot"></span><span class="bk-nm">勝者未定</span></div>`;
+  return `<div class="bk-team ${won?'win':''} ${lost?'lose':''} ${tla==='JPN'?'jpteam':''}">${FLAG(tla,'sm')}<span class="bk-nm">${T(tla).ja}</span>${score!=null?`<span class="bk-score">${score}</span>`:''}</div>`;
+}
+function renderBracket(){
+  const el=$('#bracket'); if(!el)return;
+  const byStage={};
+  for(const m of DATA.matches){ if(m.stage&&m.stage!=='GROUP_STAGE')(byStage[m.stage]=byStage[m.stage]||[]).push(m); }
+  for(const k in byStage) byStage[k].sort((a,b)=>new Date(a.utc)-new Date(b.utc));
+  const card=(m)=>{
+    const fin=isFin(m),live=isLive(m),show=fin||live;
+    const hw=fin&&m.w==='HOME_TEAM', aw=fin&&m.w==='AWAY_TEAM';
+    return `<div class="bk-match ${isJPN(m)?'jp':''} ${live?'live':''}">${live?'<div class="bk-live">LIVE</div>':''}${bkTeam(m.h,show?m.sh:null,hw,aw)}${bkTeam(m.a,show?m.sa:null,aw,hw)}</div>`;
+  };
+  let cols='';
+  for(const [st,label] of KO_STAGES){
+    const ms=byStage[st]||[];
+    cols+=`<div class="bk-col"><h4>${label}<small>${ms.length||''}</small></h4><div class="bk-col-inner">${ms.length?ms.map(card).join(''):'<div class="bk-match"><div class="bk-team tbd"><span class="bk-dot"></span><span class="bk-nm">未定</span></div></div>'}</div></div>`;
+  }
+  const tp=byStage['THIRD_PLACE']||[];
+  if(tp.length) cols+=`<div class="bk-col bk-col-3rd"><h4>3位決定戦<small></small></h4><div class="bk-col-inner">${tp.map(card).join('')}</div></div>`;
+  el.innerHTML=cols;
+}
+
 function renderScorers(){
   const el=$('#scorers-grid'); if(!el)return;
   const sc=(DATA.scorers||[]).filter(s=>s.g>0);
@@ -872,7 +935,7 @@ const CKF=new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',hour:'2-digit',
 setInterval(()=>{$('#clock').textContent=CKF.format(new Date())},1000);
 
 /* ---- 自動更新（試合中は1分ごと・通常は5分ごと） ---- */
-function renderAll(){renderNext();renderTicker();renderJapan();renderGroups();renderScorers();renderToday();renderSched()}
+function renderAll(){renderNext();renderTicker();renderJapan();renderBracket();renderGroups();renderScorers();renderToday();renderSched()}
 async function refresh(){
   try{
     const [mr,sr]=await Promise.all([fetch(API_BASE+'/api/matches'),fetch(API_BASE+'/api/standings')]);
@@ -881,7 +944,7 @@ async function refresh(){
       const byId={}; for(const m of DATA.matches) byId[m.id]=m;
       for(const x of (j.matches||[])){
         const m=byId[x.id]; if(!m)continue;
-        m.st=x.status; m.sh=x.score.fullTime.home; m.sa=x.score.fullTime.away;
+        m.st=x.status; m.sh=x.score.fullTime.home; m.sa=x.score.fullTime.away; m.w=x.score.winner;
         if(x.homeTeam?.tla)m.h=x.homeTeam.tla; if(x.awayTeam?.tla)m.a=x.awayTeam.tla;
       }
     }
